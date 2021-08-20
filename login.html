@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width-device=width,initial-scale=1.0" />
+  <title>LOGIN::Fegbee</title>
+  <style type="text/css" media="all">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      font-family: Sans-Serif;
+      margin: 80px auto;
+      width: 320px;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    .form-grp {
+      margin: 22px 0px;
+      position: relative;
+    }
+    .field {
+      color: #656565;
+      transition: 0.3s ease;
+      border-radius: 6px;
+      outline: none;
+      border: 1.4px solid #dedede;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    .label-inp {
+      color: #ababab;
+      font-size: 15px;
+      transition: 0.2s cubic-bezier(.95,.9,.1,.34);
+      top: 10.5px;
+      pointer-events: none;
+      left: 10px;
+      position: absolute;
+    }
+    .field:focus~.label-inp,.field:valid~.label-inp {
+      top: -7px;
+      font-weight: bold;
+      color: #0069ff;
+      padding: 2px;
+      background: white;
+      font-size: 10px;
+    }
+    .field:focus,.field:valid {
+      border: 1.4px solid #0069ff;
+    }
+    .btn {
+      border-radius: 5px;
+      padding: 10px;
+      background: #0070df;
+      outline: none;
+      color: white;
+      font-weight: bold;
+      border: none;
+      transition: 0.5s cubic-bezier(.25,.45,.23,.89);
+      width: 100%;
+    }
+    .btn:focus {
+      transform: translateY(-px);
+    }
+    .titles {
+      position: relative;
+    }
+    .tit{
+      text-transform: capitalize;
+      color: rgb(130,130,130);
+      text-align: left;
+      margin: 0px 0px 20px 0px;
+    }
+  </style>
+</head>
+<body>
+  <!--Begin::login-card-->
+  <div class="container">
+    <div class="tit">
+      <h3 class="titles">APLIKASI KU</h3>
+      <small>Silahkan login Untuk menikmati layanan kami! </small>
+    </div>
+    <div class="form-grp">
+      <input type="text" class="field" required="true" />
+      <label class="label-inp">Email Atau Ponsel</label>
+    </div>
+    <div class="form-grp">
+      <input type="password" class="field" required="true" />
+      <label class="label-inp">Ketikan Password</label>
+    </div>
+    <button class="btn" type="submit">Login</button>
+  </div>
+  <!--End::login-card-->
+
+</body>
+</html>
